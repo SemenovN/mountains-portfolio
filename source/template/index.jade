@@ -1,0 +1,25 @@
+doctype html
+html
+  include common/_head
+  body
+    <!--[if lt IE 7]>
+    <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+    <![endif]-->
+
+  .page
+   .bg_onmain
+    header.header: a(href="#")Авторизоваться
+    .my_persona
+     .my_persona_bg
+      .my_picture 
+       img(src="/assets/img/my_picture.jpg", alt="Моё фото")
+      .my_name 
+       h1 Николай Семенов
+       p Личный сайт веб разработчика
+      .my_contact
+     .navigation
+       - var links = [{name:"Мои работы", url:"works.html"}, {name:"Обо мне", url: "about.html"}, {name:"Блог", url:"blog.html"}]
+       ul.menu_welcome
+        each link in links
+         li.menu_welcome_item: a(href="#{link.url}") #{link.name}
+   footer.copyright © Николай Семенов | создано с любовью в LoftSchool | 2016

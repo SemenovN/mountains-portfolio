@@ -1,0 +1,29 @@
+.heading {
+	width: inherit;
+}
+.heading h2 {
+	font-size: 35px;
+  font-family: 'Bernier-Regular';
+  color: rgb(69, 90, 100);
+  line-height: 41px;
+  text-align: center;
+  width: inherit;
+}
+
+.heading h2:before {
+	position: absolute;
+	content: '\2014';
+	left: 35rem;
+	color: rgba(55, 62, 66, .2);
+	font-size: 40px;
+	line-height: 55px;
+}
+
+.heading h2:after {
+	position: absolute;
+	content: '\2014';
+	right: 6px;
+	color: rgba(55, 62, 66, .2);
+	font-size: 40px;
+	line-height: 55px;
+}

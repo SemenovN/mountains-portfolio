@@ -1,0 +1,50 @@
+doctype html
+html
+  include ../common/_head
+  body
+    <!--[if lt IE 7]>
+    <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+    <![endif]-->
+
+  .page
+   header.header_about
+    .top_informer
+     .top_menu
+      img(src="assets/img/icons/hamburger.svg", alt="")
+     .top_social_contact
+      a(href="#")
+       img(src="assets/img/icons/vk.svg", alt="")
+      a(href="#")
+       img(src="assets/img/icons/github.svg", alt="")
+      a(href="#")
+       img(src="assets/img/icons/in.svg", alt="")
+    .name_page_bg.impression
+    .page_informer
+     .my_picture 
+       img(src="/assets/img/my_picture.jpg", alt="Моё фото")
+     .my_name_aw
+        h1 Николай Семенов
+        p Личный сайт веб разработчика
+   .header_pruning 
+   .body_app.clearfix
+    section.about
+     .aboutme
+     .myskils
+      .heading
+       h2 Чем я могу быть вам полезен sssssssssss
+    section.my_location
+   .emty
+   footer.footer_page
+    .tophalf_footer
+     .bottom_menu
+       - var links = [{name:"Мои работы", url:"works.html"}, {name:"Обо мне", url: "about.html"}, {name:"Блог", url:"blog.html"},  {name:"Авторизоваться", url:"index.html"}]
+       ul
+        each link in links
+         li: a(href="#{link.url}") #{link.name}
+     .bottom_social_contact
+       img(src="assets/img/icons/vk_round.svg", alt="")
+       img(src="assets/img/icons/in_round.svg", alt="")
+       img(src="assets/img/icons/github_round.svg", alt="")
+    .bottomhalf_footer
+     .aboutme Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+     .copyright © Николай Семенов | создано с любовью в LoftSchool | 2016

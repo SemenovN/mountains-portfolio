@@ -1,0 +1,53 @@
+doctype html
+html
+  include ../common/_head
+  body
+    <!--[if lt IE 7]>
+    <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+    <![endif]-->
+
+  .page
+   header.header_blog
+    .top_informer
+     .top_menu
+      img(src="assets/img/icons/hamburger.svg", alt="")
+     .top_social_contact
+      a(href="#")
+       img(src="assets/img/icons/vk.svg", alt="")
+      a(href="#")
+       img(src="assets/img/icons/github.svg", alt="")
+      a(href="#")
+       img(src="assets/img/icons/in.svg", alt="")
+    .page_informer
+     .name_page_bg
+     .my_picture 
+       img(src="/assets/img/my_picture.jpg", alt="Моё фото")
+     .name_page
+        h1 Блог
+        p Статьи, которые я написал
+   .body_app.clearfix
+    aside.left_sidebar
+     .sidibar_menu
+      - var links = [{name:"Самое свежее в SASS", url:"#"}, {name:"Приёмы в вёрстке, без которых не обходится ни один сайт", url: "#"}, {name:"Самый необходимый набор Gulp плагинов", url:"#"},  {name:"Почему я выбрал Jade", url:"#"}]
+        ul
+         each link in links
+          li: a(href="#{link.url}") #{link.name}
+    section.maincontent
+     artical.blog_artical
+      h1 Заголовок статьи
+      p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия. Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+   .emty
+   footer.footer_page
+    .tophalf_footer
+     .bottom_menu
+       - var links = [{name:"Мои работы", url:"works.html"}, {name:"Обо мне", url: "about.html"}, {name:"Блог", url:"blog.html"},  {name:"Авторизоваться", url:"index.html"}]
+       ul
+        each link in links
+         li: a(href="#{link.url}") #{link.name}
+     .bottom_social_contact
+       img(src="assets/img/icons/vk_round.svg", alt="")
+       img(src="assets/img/icons/in_round.svg", alt="")
+       img(src="assets/img/icons/github_round.svg", alt="")
+    .bottomhalf_footer
+     .aboutme Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+     .copyright © Николай Семенов | создано с любовью в LoftSchool | 2016

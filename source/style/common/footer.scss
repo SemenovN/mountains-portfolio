@@ -1,0 +1,66 @@
+.footer_page {
+	background-color: rgba(55, 62, 66, 0.85);
+  height: 147px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-top: -147px;
+}
+
+.tophalf_footer {
+	//position: relative;
+	width: 100%;
+  clear: both;
+}
+
+.bottom_menu, .aboutme {
+	width: 50%;
+	float: left;
+}
+.bottom_social_contact, .copyright {
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+.bottom_menu ul {
+ list-style-type: none;
+ padding: 11px;
+}
+
+.bottom_menu li {
+ display: inline-block;
+}
+
+.bottom_menu a {
+ font-size: 16px;
+ font-family: "Roboto-Medium";
+ color: rgb(255, 255, 255);
+ line-height: 1.502;
+ padding: 31px 20px;
+ position: relative;
+ text-align: left;
+ text-decoration: none;
+}
+
+.bottomhalf_footer {
+	width: 100%;
+	clear: both;
+}
+
+.aboutme {
+	font-size: 16px;
+  font-family: "Roboto-Light";
+  color: rgba(255, 255, 255, 0.502);
+  line-height: 1.5;
+  //padding: 10px 31px;
+  text-align: left;
+}
+
+.copyright {
+	font-size: 16px;
+  font-family: "Roboto-Light";
+  color: rgba(255, 255, 255, 0.502);
+  line-height: 1.5;
+  //padding: 10px 31px;
+  text-align: right;
+}
