@@ -1,29 +1,43 @@
-.heading {
-	width: inherit;
+.myskils {
+ min-width: 100px;
 }
-.heading h2 {
+
+h1, h2.heading {
 	font-size: 35px;
   font-family: 'Bernier-Regular';
   color: rgb(69, 90, 100);
   line-height: 41px;
   text-align: center;
-  width: inherit;
+  width: 420px;
+  height: 190px;
+  margin: auto;
 }
 
-.heading h2:before {
+h1.heading {
+  font-size: 63px;
+}
+.heading_bg {
+	background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heading_bg:before {
 	position: absolute;
 	content: '\2014';
-	left: 35rem;
+	left: 50%;
+  color: rgba(55, 62, 66, 0.2);
+  font-size: 40px;
+  line-height: 55px;
+  margin-left: -210px;
+}
+
+.heading_bg:after {
+	position: absolute;
+	content: '\2014';
+	right: 50%;
 	color: rgba(55, 62, 66, .2);
 	font-size: 40px;
 	line-height: 55px;
-}
-
-.heading h2:after {
-	position: absolute;
-	content: '\2014';
-	right: 6px;
-	color: rgba(55, 62, 66, .2);
-	font-size: 40px;
-	line-height: 55px;
+	margin-right: -210px;
 }

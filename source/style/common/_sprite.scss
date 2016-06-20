@@ -1,175 +1,147 @@
-.svg-about_bg_left-dims {
-	width: 900.006px;
-	height: 1013.986px;
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
 }
 
-.svg-about_bg_right-dims {
-	width: 900.331px;
-	height: 1009.986px;
+.icon-about_bg_left {
+	font-size:(1013.986/10)*1rem;
+	width:(900.006/1013.986)*1em;
 }
-
-.svg-about_header-dims {
-	width: 498.161px;
-	height: 175.44px;
+.icon-about_bg_right {
+	font-size:(1009.986/10)*1rem;
+	width:(900.331/1009.986)*1em;
 }
-
-.svg-arrow_down-dims {
-	width: 25.18px;
-	height: 16.164px;
+.icon-about_header {
+	font-size:(175.44/10)*1rem;
+	width:(498.161/175.44)*1em;
 }
-
-.svg-bg-dims {
-	width: 2000px;
-	height: 354.69px;
+.icon-arrow_down {
+	font-size:(16.164/10)*1rem;
+	width:(25.18/16.164)*1em;
 }
-
-.svg-blog_header-dims {
-	width: 302.193px;
-	height: 208.012px;
+.icon-bg {
+	font-size:(354.69/10)*1rem;
+	width:(2000/354.69)*1em;
 }
-
-.svg-check-dims {
-	width: 18.164px;
-	height: 13.922px;
+.icon-blog_header {
+	font-size:(208.012/10)*1rem;
+	width:(302.193/208.012)*1em;
 }
-
-.svg-envelope-dims {
-	width: 22.012px;
-	height: 17.295px;
+.icon-check {
+	font-size:(13.922/10)*1rem;
+	width:(18.164/13.922)*1em;
 }
-
-.svg-envelope2-dims {
-	width: 23px;
-	height: 16.391px;
+.icon-envelope {
+	font-size:(17.295/10)*1rem;
+	width:(22.012/17.295)*1em;
 }
-
-.svg-envelope_n-dims {
-	width: 45px;
-	height: 45px;
+.icon-envelope2 {
+	font-size:(16.391/10)*1rem;
+	width:(23/16.391)*1em;
 }
-
-.svg-github-dims {
-	width: 26px;
-	height: 22px;
+.icon-envelope_n {
+	font-size:(45/10)*1rem;
+	width:(45/45)*1em;
 }
-
-.svg-github_round-dims {
-	width: 50px;
-	height: 50px;
+.icon-github {
+	font-size:(22/10)*1rem;
+	width:(26/22)*1em;
 }
-
-.svg-hamburger-dims {
-	width: 40px;
-	height: 35px;
+.icon-github_round {
+	font-size:(50/10)*1rem;
+	width:(50/50)*1em;
 }
-
-.svg-in-dims {
-	width: 24px;
-	height: 22.938px;
+.icon-hamburger {
+	font-size:(35/10)*1rem;
+	width:(40/35)*1em;
 }
-
-.svg-in_round-dims {
-	width: 50px;
-	height: 50px;
+.icon-in {
+	font-size:(22.938/10)*1rem;
+	width:(24/22.938)*1em;
 }
-
-.svg-link-dims {
-	width: 19.125px;
-	height: 19.125px;
+.icon-in_round {
+	font-size:(50/10)*1rem;
+	width:(50/50)*1em;
 }
-
-.svg-login-dims {
-	width: 14.137px;
-	height: 15.422px;
+.icon-link {
+	font-size:(19.125/10)*1rem;
+	width:(19.125/19.125)*1em;
 }
-
-.svg-map_marker-dims {
-	width: 15.151px;
-	height: 21.654px;
+.icon-login {
+	font-size:(15.422/10)*1rem;
+	width:(14.137/15.422)*1em;
 }
-
-.svg-map_n-dims {
-	width: 45px;
-	height: 45px;
+.icon-map_marker {
+	font-size:(21.654/10)*1rem;
+	width:(15.151/21.654)*1em;
 }
-
-.svg-password-dims {
-	width: 16.897px;
-	height: 15.984px;
+.icon-map_n {
+	font-size:(45/10)*1rem;
+	width:(45/45)*1em;
 }
-
-.svg-phone-dims {
-	width: 18.864px;
-	height: 18.863px;
+.icon-password {
+	font-size:(15.984/10)*1rem;
+	width:(16.897/15.984)*1em;
 }
-
-.svg-phone2-dims {
-	width: 16.492px;
-	height: 20.947px;
+.icon-phone {
+	font-size:(18.863/10)*1rem;
+	width:(18.864/18.863)*1em;
 }
-
-.svg-phone_n-dims {
-	width: 45px;
-	height: 45px;
+.icon-phone2 {
+	font-size:(20.947/10)*1rem;
+	width:(16.492/20.947)*1em;
 }
-
-.svg-portf_arrow_down-dims {
-	width: 42.736px;
-	height: 27.435px;
+.icon-phone_n {
+	font-size:(45/10)*1rem;
+	width:(45/45)*1em;
 }
-
-.svg-portf_arrow_up-dims {
-	width: 42.736px;
-	height: 27.435px;
+.icon-portf_arrow_down {
+	font-size:(27.435/10)*1rem;
+	width:(42.736/27.435)*1em;
 }
-
-.svg-portfolio_header-dims {
-	width: 1175.495px;
-	height: 313.961px;
+.icon-portf_arrow_up {
+	font-size:(27.435/10)*1rem;
+	width:(42.736/27.435)*1em;
 }
-
-.svg-skype-dims {
-	width: 24px;
-	height: 24px;
+.icon-portfolio_header {
+	font-size:(313.961/10)*1rem;
+	width:(1175.495/313.961)*1em;
 }
-
-.svg-skype_n-dims {
-	width: 600px;
-	height: 600px;
+.icon-skype {
+	font-size:(24/10)*1rem;
+	width:(24/24)*1em;
 }
-
-.svg-stars1-dims {
-	width: 186.861px;
-	height: 110.966px;
+.icon-skype_n {
+	font-size:(600/10)*1rem;
+	width:(600/600)*1em;
 }
-
-.svg-stars2-dims {
-	width: 171.5px;
-	height: 132.5px;
+.icon-stars1 {
+	font-size:(110.966/10)*1rem;
+	width:(186.861/110.966)*1em;
 }
-
-.svg-stars3-dims {
-	width: 103.03px;
-	height: 124.03px;
+.icon-stars2 {
+	font-size:(132.5/10)*1rem;
+	width:(171.5/132.5)*1em;
 }
-
-.svg-telegram_logo-dims {
-	width: 238.892px;
-	height: 238.892px;
+.icon-stars3 {
+	font-size:(124.03/10)*1rem;
+	width:(103.03/124.03)*1em;
 }
-
-.svg-vk-dims {
-	width: 30.011px;
-	height: 17.123px;
+.icon-telegram_logo {
+	font-size:(238.892/10)*1rem;
+	width:(238.892/238.892)*1em;
 }
-
-.svg-vk_round-dims {
-	width: 50px;
-	height: 50px;
+.icon-vk {
+	font-size:(17.123/10)*1rem;
+	width:(30.011/17.123)*1em;
 }
-
-.svg-works_header-dims {
-	width: 505.101px;
-	height: 165.036px;
+.icon-vk_round {
+	font-size:(50/10)*1rem;
+	width:(50/50)*1em;
 }
-
+.icon-works_header {
+	font-size:(165.036/10)*1rem;
+	width:(505.101/165.036)*1em;
+}

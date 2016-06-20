@@ -25,26 +25,12 @@ html
      .my_name_aw
         h1 Николай Семенов
         p Личный сайт веб разработчика
-   .header_pruning 
+    .header_pruning
    .body_app.clearfix
     section.about
      .aboutme
      .myskils
-      .heading
-       h2 Чем я могу быть вам полезен sssssssssss
+       h2.heading Чем я могу быть вам полезен sssssssssss
     section.my_location
    .emty
-   footer.footer_page
-    .tophalf_footer
-     .bottom_menu
-       - var links = [{name:"Мои работы", url:"works.html"}, {name:"Обо мне", url: "about.html"}, {name:"Блог", url:"blog.html"},  {name:"Авторизоваться", url:"index.html"}]
-       ul
-        each link in links
-         li: a(href="#{link.url}") #{link.name}
-     .bottom_social_contact
-       img(src="assets/img/icons/vk_round.svg", alt="")
-       img(src="assets/img/icons/in_round.svg", alt="")
-       img(src="assets/img/icons/github_round.svg", alt="")
-    .bottomhalf_footer
-     .aboutme Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
-     .copyright © Николай Семенов | создано с любовью в LoftSchool | 2016
+   include ../common/_footer

@@ -28,7 +28,7 @@ module.exports = function() {
 					render: {
 						scss: {
 							dest:'../style/common/_sprite.scss',
-							/*template: "../mypersonalpage/source/style/common/_sprite_template.scss"*/
+							template: "../mypersonalpage/source/style/common/_sprite_template.scss"
 						}
 					}
 				}

@@ -1,0 +1,15 @@
+footer.footer_page
+    .tophalf_footer.clearfix
+     .bottom_menu
+       - var links = [{name:"Мои работы", url:"works.html"}, {name:"Обо мне", url: "about.html"}, {name:"Блог", url:"blog.html"},  {name:"Авторизоваться", url:"index.html"}]
+       ul.bottom_menu_list
+        each link in links
+         li.bottom_menu_list_item: a(href="#{link.url}") #{link.name}
+     .bottom_social_contact
+      - var links = [{name:"+icon('vk_round','red_mod')", url:"https://vk.com/id40828570"}, {name:"+icon('github_round','red_mod')", url: "https://github.com/SemenovN"}, {name:"+icon('in_round','red_mod')", url:"https://www.linkedin.com/home?trk=nav_responsive_tab_home"}]
+       ul.bottom_social_contact_list
+        each link in links
+         li.bottom_social_list_item: a(href="#{link.url}") #{link.name}
+    .bottomhalf_footer.clearfix
+     .aboutme Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+     .copyright © Николай Семенов | создано с любовью в LoftSchool | 2016

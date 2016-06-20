@@ -33,7 +33,7 @@ $.gulp.task('default', $.gulp.series(
     'js.process',
     'copy.image',
     'copy.fonts',
-    'svgSpriteBuild',
+   /* 'svgSpriteBuild',*/
     'css.foundation'
   ),
   $.gulp.parallel(

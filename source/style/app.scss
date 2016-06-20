@@ -8,13 +8,16 @@ body {
   height: 100%;
   width: 100%;
 }
-
+* {
+	box-sizing: border-box;
+}
 .page {
   min-height: 100%;
   position: relative;
 }
 
 @import 'common/fonts';
+@import 'common/_sprite';
 @import 'common/tipografy';
 @import 'common/header';
 @import 'common/sidebar';
