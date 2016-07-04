@@ -8,30 +8,35 @@ html
     <![endif]-->
 
   .page
-   header.header_about
-    .top_informer
-     .top_menu
-      img(src="assets/img/icons/hamburger.svg", alt="")
-     .top_social_contact
-      a(href="#")
-       img(src="assets/img/icons/vk.svg", alt="")
-      a(href="#")
-       img(src="assets/img/icons/github.svg", alt="")
-      a(href="#")
-       img(src="assets/img/icons/in.svg", alt="")
-    .name_page_bg.impression
-    .page_informer
-     .my_picture 
-       img(src="/assets/img/my_picture.jpg", alt="Моё фото")
-     .my_name_aw
-        h1 Николай Семенов
-        p Личный сайт веб разработчика
-    .header_pruning
-   section.my_works 
-   h1.heading My Works
-   Личный сайт веб разработчикаЛичный сайт веб разработчикаЛичный сайт веб разработчикаЛичный сайт веб разработчикаЛичный сайт веб разработчикаЛичный сайт веб разработчикаЛичный сайт веб разработчикаЛичный сайт веб разработчика
-   section.talk_about_me 
-    .filling
-     .heading_bg
-      h1.heading what they say about me
-   include ../common/_footer
+    header.header_blog.about_and_works
+     .top_informer
+      .top_menu
+       +icon('hamburger', '#')
+      +icon_set("top_social_contact",[{name:"vk", url:"https://vk.com/id40828570"}, {name:"github", url: "https://github.com/SemenovN"}, {name:"in", url:"https://www.linkedin.com/home?trk=nav_responsive_tab_home"}])
+     .name_page_bg.impression
+     .page_informer
+      .my_picture 
+        img(src="/assets/img/my_picture.jpg", alt="Моё фото")
+       .my_name_aw
+         h1 Nikolai Semenov
+         p Own site of webdeveloper 
+      .bottom_arrow
+        +icon('arrow_down', '#')
+    section.my_works
+     .heading
+      .heading_bg.warks_bg
+      .item_heading
+        h1 My Works
+    section.talk_aboutme 
+     .heading
+      .heading_bg.talk_bg
+      .item_heading
+        h1 Talking about me
+     .talk_aboutme_wrap
+     .talk_aboutme_bg fff
+      img(src="/assets/img/bg.jpg", alt="" class="aboutme_bg")
+      .form_panel
+        .form_bg
+          .form_bler_bg
+
+    include ../common/_footer

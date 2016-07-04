@@ -1,0 +1,162 @@
+.footer_page {
+	background-color: rgba(#2f4448, 0.85);
+  height: 146px;
+  width: 100%;
+  position: absolute;
+  margin-top: -146px;
+  @include laptop {
+    height: 234px;
+    margin-top: -234px;
+  }
+  @include tablets {
+    height: 234px;
+    margin-top: -234px;
+  }
+  @include phones {
+    height: 270px;
+    margin-top: -270px;
+  }
+}
+
+.tophalf_footer {
+	width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.bottom_menu {
+	width: 50%;
+	float: left;
+  padding: 28px 10px 26px;
+  @include laptop {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0;
+  }
+  @include tablets {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0;
+  } 
+  @include phones {
+    width: 100%;
+    text-align: center;
+    padding: 28px 10px 0;
+  } 
+}
+
+.bottom_menu_list, 
+.bottom_social_contact_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom_menu_list_item, 
+.bottom_social_contact_list_item {
+   display: inline-block;
+}
+
+.bottom_menu a {
+  font-family: "Roboto-Medium";
+  color: rgb(255, 255, 255);
+  padding: 10px 10px;
+  text-align: left;
+  text-decoration: none;
+ 
+  @include phones {
+    font-size: 13px;
+  }
+}
+
+.bottom_social_contact {
+  padding: 14px 30px;
+}
+
+.bottom_social_contact .icon-github_round, 
+.icon-vk_round, 
+.icon-in_round {
+  font-size: 6rem;
+  width:(50/50)*0.5em;
+  height: 2.5rem;
+  padding: 0 5px;
+  fill: transparent;
+  stroke:  #97a3a4;
+}
+
+.bottom_social_contact .icon-github_round:hover, 
+.icon-vk_round:hover, 
+.icon-in_round:hover {
+  fill: #fff;
+}
+
+.bottom_social_contact, 
+.copyright {
+  width: 50%;
+  float: right;
+  text-align: right;
+  
+  @include laptop {
+   width: 100%;
+   text-align: center;
+  }
+  
+  @include tablets {
+    width: 100%;
+    text-align: center;
+  } 
+  
+  @include phones {
+    width: 100%;
+    text-align: center;
+  } 
+}
+
+.bottomhalf_footer {
+  color: rgba(255, 255, 255, 0.502);
+  font-family: "Roboto-Light";
+  width: 100%;
+}
+
+.aboutme {
+  width: 50%;
+  float: left;
+  padding: 16px 30px;
+  
+  @include laptop {
+      width: 100%;
+      text-align: center;
+     }
+  
+    @include tablets {
+      width: 100%;
+      text-align: center;
+    } 
+  
+    @include phones {
+      width: 100%;
+      text-align: center;
+    } 
+}
+
+.copyright {
+  padding: 16px 30px;
+  text-align: right;
+  
+  @include laptop {
+      width: 100%;
+      text-align: center;
+      padding-top: 0;
+     }
+  
+    @include tablets {
+      width: 100%;
+      text-align: center;
+      padding-top: 0;
+    } 
+  
+    @include phones {
+      width: 100%;
+      text-align: center;
+      padding-top: 0;
+    } 
+}

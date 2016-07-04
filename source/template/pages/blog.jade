@@ -1,6 +1,7 @@
 doctype html
 html
   include ../common/_head
+  include ../common/_mixsin
   body
     <!--[if lt IE 7]>
     <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
@@ -8,33 +9,40 @@ html
 
   .page
    header.header_blog
-    .top_informer
+    .top_informer.clearfix
      .top_menu
-      img(src="assets/img/icons/hamburger.svg", alt="")
-     .top_social_contact
-      a(href="#")
-       img(src="assets/img/icons/vk.svg", alt="")
-      a(href="#")
-       img(src="assets/img/icons/github.svg", alt="")
-      a(href="#")
-       img(src="assets/img/icons/in.svg", alt="")
-    .page_informer
-     .name_page_bg
+      +icon('hamburger', '#')
+     +icon_set("top_social_contact",[{name:"vk", url:"https://vk.com/id40828570"}, {name:"github", url: "https://github.com/SemenovN"}, {name:"in", url:"https://www.linkedin.com/home?trk=nav_responsive_tab_home"}])
+    .page_informer_blog
      .my_picture 
        img(src="/assets/img/my_picture.jpg", alt="Моё фото")
-     .name_page
-        h1 Блог
-        p Статьи, которые я написал
+     .heading_bg.blog_bg
+     .heading
+          .item_heading
+                h1 Blog
    .body_app.clearfix
     aside.left_sidebar
-     .sidibar_menu
+     .sidebar_menu
       - var links = [{name:"Самое свежее в SASS", url:"#"}, {name:"Приёмы в вёрстке, без которых не обходится ни один сайт", url: "#"}, {name:"Самый необходимый набор Gulp плагинов", url:"#"},  {name:"Почему я выбрал Jade", url:"#"}]
-        ul
+        ul.sidebar_menu_list
          each link in links
-          li: a(href="#{link.url}") #{link.name}
-    section.maincontent
+          li.sidebar_menu_item: a(href="#{link.url}" class="sidebar_menu_link") #{link.name}
+    section.blog_content
      artical.blog_artical
-      h1 Заголовок статьи
-      p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия. Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+       h1.heading_artical Заголовок статьи
+       .date_create_artical 27.06.2016
+       p.content_artical Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия. Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+     artical.blog_artical
+       h1.heading_artical Заголовок статьи
+       .date_create_artical 27.06.2016
+       p.content_artical Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime molestias nostrum, magni, quidem quia sit! Dolores obcaecati est, architecto voluptates ad ipsa vitae ut maxime debitis molestiae dicta amet! Numquam.
+       p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eos non sunt magnam soluta eaque illo corporis libero doloremque neque repudiandae odit labore itaque minus, est cupiditate incidunt, aperiam in.
+       p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum optio, saepe velit ipsa dolorem sint, repellat doloremque id est, libero, vel nulla asperiores reprehenderit adipisci! Pariatur laudantium saepe, non autem.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ab odit, officiis repellendus. Commodi numquam fugiat eius quae aperiam veniam! Doloremque a dolores laborum ratione autem, soluta voluptatibus voluptas consequatur!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus omnis obcaecati itaque expedita soluta, eos suscipit! Omnis minus voluptatibus facere, praesentium, qui accusamus placeat, at fugit, quisquam a architecto atque.
+       artical.blog_artical
+       h1.heading_artical Заголовок статьи
+       .date_create_artical 27.06.2016
+       p.content_artical Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime molestias nostrum, magni, quidem quia sit! Dolores obcaecati est, architecto voluptates ad ipsa vitae ut maxime debitis molestiae dicta amet! Numquam.
+       p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eos non sunt magnam soluta eaque illo corporis libero doloremque neque repudiandae odit labore itaque minus, est cupiditate incidunt, aperiam in.
+       p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum optio, saepe velit ipsa dolorem sint, repellat doloremque id est, libero, vel nulla asperiores reprehenderit adipisci! Pariatur laudantium saepe, non autem.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ab odit, officiis repellendus. Commodi numquam fugiat eius quae aperiam veniam! Doloremque a dolores laborum ratione autem, soluta voluptatibus voluptas consequatur!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus omnis obcaecati itaque expedita soluta, eos suscipit! Omnis minus voluptatibus facere, praesentium, qui accusamus placeat, at fugit, quisquam a architecto atque.
    .emty
    include ../common/_footer

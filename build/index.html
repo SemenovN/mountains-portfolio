@@ -8,10 +8,11 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="/assets/css/foundation.css">
-    <link rel="stylesheet" href="/assets/css/app.css">
-    <script src="/assets/js/foundation.js" defer></script>
-    <script src="/assets/js/app.js" defer></script><!--[if lt IE 9]>
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="assets/js/foundation.js" defer></script>
+    <script src="assets/js/app.js" defer></script><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
@@ -20,26 +21,55 @@
     <![endif]-->
   </body>
   <div class="page">
-    <div class="bg_onmain">
-      <header class="header"><a href="#">Авторизоваться</a></header>
-      <div class="my_persona">
-        <div class="my_persona_bg">
-          <div class="my_picture"> <img src="/assets/img/my_picture.jpg" alt="Моё фото"></div>
-          <div class="my_name"> 
-            <h1>Николай Семенов</h1>
-            <p>Личный сайт веб разработчика</p>
-          </div>
-          <div class="my_contact"></div>
+    <div class="welcome_bg">
+      <div class="parallax_layer"><img src="assets/img/parallax/Layer5.png"></div>
+      <div class="parallax_layer"><img src="assets/img/parallax/Layer8.png"></div>
+      <div class="parallax_layer"><img src="assets/img/parallax/Layer7.png"></div>
+      <div class="parallax_layer"><img src="assets/img/parallax/Layer9.png"></div>
+      <div class="parallax_layer"><img src="assets/img/parallax/Layer6.png"></div>
+      <div class="parallax_layer"><img src="assets/img/parallax/Layer4.png"></div>
+      <div class="parallax_layer sky"><img src="assets/img/parallax/Layer3.png"></div>
+      <div class="parallax_layer"><img src="assets/img/parallax/Layer2.png"></div>
+      <div class="parallax_layer"><img src="assets/img/parallax/Layer1.png"></div>
+      <div class="parallax_layer cloud"><img src="assets/img/parallax/Layer10.png"></div>
+    </div>
+    <div class="top_informer clearfix">
+      <div class="top_menu welcome"><a href="#" class="top_menu_link">Авторизоваться</a></div>
+    </div>
+    <div class="welcome_panel">
+      <div class="my_persona_bg">
+        <div class="my_picture"> <img src="/assets/img/my_picture.jpg" alt="Моё фото"></div>
+        <div class="my_name"> 
+          <h1>Николай Семенов</h1>
+          <p>Личный сайт веб разработчика</p>
         </div>
-        <div class="navigation">
-          <ul class="menu_welcome">
-            <li class="menu_welcome_item"><a href="works.html">Мои работы</a></li>
-            <li class="menu_welcome_item"><a href="about.html">Обо мне</a></li>
-            <li class="menu_welcome_item"><a href="blog.html">Блог</a></li>
-          </ul>
+        <div class="my_contact">
+            <div class="social_contact"> 
+              <ul class="social_contact_list">
+                <li class="social_contact_list_item"><a href="https://vk.com/id40828570" class="social_contact_link">
+                    <svg class="icon-vk">
+                      <use xlink:href="/assets/img/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="social_contact_list_item"><a href="https://github.com/SemenovN" class="social_contact_link">
+                    <svg class="icon-github">
+                      <use xlink:href="/assets/img/sprite.svg#github"></use>
+                    </svg></a></li>
+                <li class="social_contact_list_item"><a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home" class="social_contact_link">
+                    <svg class="icon-in">
+                      <use xlink:href="/assets/img/sprite.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
         </div>
       </div>
+      <div class="navigation">
+        <ul class="menu_welcome">
+          <li class="menu_welcome_item"><a href="works.html">Мои работы</a></li>
+          <li class="menu_welcome_item"><a href="about.html">Обо мне</a></li>
+          <li class="menu_welcome_item"><a href="blog.html">Блог</a></li>
+        </ul>
+      </div>
     </div>
-    <footer class="copyright">© Николай Семенов | создано с любовью в LoftSchool | 2016</footer>
+    <footer class="copyright_on_main">© Николай Семенов | создано с любовью в LoftSchool | 2016</footer>
   </div>
 </html>

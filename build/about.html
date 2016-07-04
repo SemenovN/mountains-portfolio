@@ -8,10 +8,11 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="/assets/css/foundation.css">
-    <link rel="stylesheet" href="/assets/css/app.css">
-    <script src="/assets/js/foundation.js" defer></script>
-    <script src="/assets/js/app.js" defer></script><!--[if lt IE 9]>
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="assets/js/foundation.js" defer></script>
+    <script src="assets/js/app.js" defer></script><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
@@ -20,31 +21,93 @@
     <![endif]-->
   </body>
   <div class="page">
-    <header class="header_about">
+    <header class="header_blog about_and_works">
       <div class="top_informer">
-        <div class="top_menu"><img src="assets/img/icons/hamburger.svg" alt=""></div>
-        <div class="top_social_contact"><a href="#"><img src="assets/img/icons/vk.svg" alt=""></a><a href="#"><img src="assets/img/icons/github.svg" alt=""></a><a href="#"><img src="assets/img/icons/in.svg" alt=""></a></div>
+        <div class="top_menu"><a href="#" class="hamburger_link">
+              <svg class="icon icon-hamburger">
+                <use xlink:href="/assets/img/sprite.svg#hamburger"></use>
+              </svg></a>
+        </div>
+          <div class="top_social_contact"> 
+            <ul class="top_social_contact_list">
+              <li class="top_social_contact_list_item"><a href="https://vk.com/id40828570" class="top_social_contact_link">
+                  <svg class="icon-vk">
+                    <use xlink:href="/assets/img/sprite.svg#vk"></use>
+                  </svg></a></li>
+              <li class="top_social_contact_list_item"><a href="https://github.com/SemenovN" class="top_social_contact_link">
+                  <svg class="icon-github">
+                    <use xlink:href="/assets/img/sprite.svg#github"></use>
+                  </svg></a></li>
+              <li class="top_social_contact_list_item"><a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home" class="top_social_contact_link">
+                  <svg class="icon-in">
+                    <use xlink:href="/assets/img/sprite.svg#in"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
       </div>
       <div class="name_page_bg impression"></div>
       <div class="page_informer">
         <div class="my_picture"> <img src="/assets/img/my_picture.jpg" alt="Моё фото"></div>
         <div class="my_name_aw">
-          <h1>Николай Семенов</h1>
-          <p>Личный сайт веб разработчика</p>
+          <h1>Nikolai Semenov</h1>
+          <p>Own site of webdeveloper </p>
+        </div>
+        <div class="bottom_arrow"><a href="#" class="bottom_anchor"><img src="assets/img/icons/arrow_down.svg" alt="" class="arrow_down"></a></div>
+      </div>
+    </header>
+    <section class="about clearfix">
+      <div class="aboutme">
+        <div class="lefthalf_aboutme">
+          <div class="heading">
+            <div class="heading_bg about_bg"></div>
+            <div class="item_heading">
+              <h1>About me</h1>
+            </div>
+          </div>
+        </div>
+        <div class="righthalf_aboutme">
+          <div class="aboutme_wrap"><img src="/assets/img/inwork.jpg" alt="" class="in_work">
+            <div class="heading">
+              <div class="item_heading">
+                <h2>Who am I</h2>
+              </div>
+            </div>
+            <div class="text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, natus fugit laboriosam provident vero, nihil doloremque sed, adipisci placeat, modi earum consequatur exercitationem aliquam quia dolorem consectetur amet beatae accusamus.</div>
+            <div class="text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, natus fugit laboriosam provident vero, nihil doloremque sed, adipisci placeat, modi earum consequatur exercitationem aliquam quia dolorem consectetur amet beatae accusamus.</div>
+          </div>
         </div>
       </div>
-      <div class="header_pruning"></div>
-    </header>
-    <div class="body_app clearfix">
-      <section class="about">
-        <div class="aboutme"></div>
-        <div class="myskils">
-          <h2 class="heading">Чем я могу быть вам полезен sssssssssss</h2>
+      <div class="myskils">
+        <div class="heading">
+          <div class="item_heading">
+            <h2>How can I help you</h2>
+          </div>
         </div>
-      </section>
-      <section class="my_location"></section>
-    </div>
-    <div class="emty"></div>
+        <div class="text">Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</div>
+        <div class="row_skils">
+          <div class="field_skils">Frontend</div>
+          <div class="skils_panel">
+            <div class="skil_item"> 
+              <div class="skil">HTML  </div>
+              <svg class="g-circles">
+                <circle r="45" cx="55" cy="55" stroke="#ccc" fill="none"></circle>
+                <circle r="45" cx="55" cy="55" stroke="#10c1a8" transform="rotate(-90 55 55)" stroke-dashoffset="20" class="sector"></circle>
+              </svg>
+            </div>
+          </div>
+          <div class="skil_item"> 
+            <div class="skil">CSS3 </div>
+          </div>
+          <svg class="g-circles">
+            <circle r="45" cx="55" cy="55" stroke="#ccc" fill="none"></circle>
+            <circle r="45" cx="55" cy="55" stroke="#10c1a8" transform="rotate(-90 55 55)" stroke-dashoffset="13" class="sector"></circle>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section class="my_location">
+      <div id="map"></div>
+    </section>
     <footer class="footer_page">
       <div class="tophalf_footer clearfix">
         <div class="bottom_menu">
@@ -55,13 +118,22 @@
             <li class="bottom_menu_list_item"><a href="index.html">Авторизоваться</a></li>
           </ul>
         </div>
-        <div class="bottom_social_contact">
-          <ul class="bottom_social_contact_list">
-            <li class="bottom_social_list_item"><a href="https://vk.com/id40828570">+icon('vk_round','red_mod')</a></li>
-            <li class="bottom_social_list_item"><a href="https://github.com/SemenovN">+icon('github_round','red_mod')</a></li>
-            <li class="bottom_social_list_item"><a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home">+icon('in_round','red_mod')</a></li>
-          </ul>
-        </div>
+            <div class="bottom_social_contact"> 
+              <ul class="bottom_social_contact_list">
+                <li class="bottom_social_contact_list_item"><a href="https://vk.com/id40828570" class="bottom_social_contact_link">
+                    <svg class="icon-vk_round">
+                      <use xlink:href="/assets/img/sprite.svg#vk_round"></use>
+                    </svg></a></li>
+                <li class="bottom_social_contact_list_item"><a href="https://github.com/SemenovN" class="bottom_social_contact_link">
+                    <svg class="icon-github_round">
+                      <use xlink:href="/assets/img/sprite.svg#github_round"></use>
+                    </svg></a></li>
+                <li class="bottom_social_contact_list_item"><a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home" class="bottom_social_contact_link">
+                    <svg class="icon-in_round">
+                      <use xlink:href="/assets/img/sprite.svg#in_round"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
       </div>
       <div class="bottomhalf_footer clearfix">
         <div class="aboutme">Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</div>

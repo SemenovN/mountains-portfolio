@@ -1,4 +1,14 @@
-mixin icon(name,mod)
+mixin icon(name, url)
 	- mod = mod || ''
-	svg(class="icon icon-" + name + ' ' + mod)
-		use(xlink:href="../images/sprite.svg#" + name)
+		a(href="#{url}" class="#{name}_link")
+			svg(class="icon icon-" + name)
+				use(xlink:href="/assets/img/sprite.svg#" + name)
+
+mixin icon_set(className,items)
+	div(class="#{className}") 
+		ul(class="#{className}_list")
+			each icon in items
+				li(class="#{className}_list_item")
+					a(href="#{icon.url}" class="#{className}_link")
+						svg(class="icon-"+ icon.name)
+							use(xlink:href="/assets/img/sprite.svg#"+icon.name)

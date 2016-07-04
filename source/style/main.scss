@@ -1,0 +1,45 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  font-family: 'Roboto-Regular';
+}
+
+body {
+  margin: 0;
+  //height: 100%;
+  width: 100%;
+}
+* {
+	box-sizing: border-box;
+}
+.page {
+  height: 100%;
+  //position: relative;
+}
+// Modules and Variables
+@import 'partials/base';
+
+
+// Partials
+@import 'partials/fonts';
+@import 'partials/_sprite';
+@import 'partials/tipografy';
+@import 'partials/header';
+@import 'partials/contentblog';
+@import 'partials/greating';
+@import 'partials/footer';
+@import 'partials/media';
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}

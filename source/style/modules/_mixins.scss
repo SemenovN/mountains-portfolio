@@ -1,0 +1,37 @@
+
+// Set breakpoints for responsive design
+@mixin largscreen {
+	@media screen and (min-width: 1800px) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media screen and (max-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media screen and (max-width: 1117px) {
+		@content;
+	}
+}
+
+
+@mixin tablets {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin phones {
+	@media screen and (max-width: 524px) {
+		@content;
+	}
+}
+@mixin screen320 {
+	@media screen and (max-width: 394px) {
+		@content;
+	}
+}

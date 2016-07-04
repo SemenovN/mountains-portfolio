@@ -1,25 +1,48 @@
 doctype html
 html
   include common/_head
+  include common/_mixsin
   body
     <!--[if lt IE 7]>
     <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
     <![endif]-->
-
   .page
-   .bg_onmain
-    header.header: a(href="#")Авторизоваться
-    .my_persona
-     .my_persona_bg
-      .my_picture 
-       img(src="/assets/img/my_picture.jpg", alt="Моё фото")
-      .my_name 
-       h1 Николай Семенов
-       p Личный сайт веб разработчика
-      .my_contact
-     .navigation
+   .welcome_bg
+       .parallax_layer
+           img(src='assets/img/parallax/Layer5.png')
+       .parallax_layer
+           img(src='assets/img/parallax/Layer8.png')
+       .parallax_layer
+           img(src='assets/img/parallax/Layer7.png')
+       .parallax_layer
+           img(src='assets/img/parallax/Layer9.png')
+       .parallax_layer
+           img(src='assets/img/parallax/Layer6.png')
+       .parallax_layer
+           img(src='assets/img/parallax/Layer4.png')
+       .parallax_layer.sky
+           img(src='assets/img/parallax/Layer3.png')
+       .parallax_layer
+           img(src='assets/img/parallax/Layer2.png')
+       .parallax_layer
+           img(src='assets/img/parallax/Layer1.png')
+       .parallax_layer.cloud
+           img(src='assets/img/parallax/Layer10.png')
+    .top_informer.clearfix
+     .top_menu.welcome
+      a(href="#" class='top_menu_link') Авторизоваться
+    .welcome_panel
+      .my_persona_bg
+       .my_picture 
+        img(src="/assets/img/my_picture.jpg", alt="Моё фото")
+       .my_name 
+        h1 Николай Семенов
+        p Личный сайт веб разработчика
+       .my_contact
+        +icon_set("social_contact",[{name:"vk", url:"https://vk.com/id40828570"}, {name:"github", url: "https://github.com/SemenovN"}, {name:"in", url:"https://www.linkedin.com/home?trk=nav_responsive_tab_home"}])
+      .navigation
        - var links = [{name:"Мои работы", url:"works.html"}, {name:"Обо мне", url: "about.html"}, {name:"Блог", url:"blog.html"}]
        ul.menu_welcome
         each link in links
          li.menu_welcome_item: a(href="#{link.url}") #{link.name}
-   footer.copyright © Николай Семенов | создано с любовью в LoftSchool | 2016
+   footer.copyright_on_main © Николай Семенов | создано с любовью в LoftSchool | 2016

@@ -1,36 +1,61 @@
 doctype html
 html
   include ../common/_head
+  include ../common/_mixsin
   body
     <!--[if lt IE 7]>
     <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
     <![endif]-->
 
   .page
-   header.header_about
-    .top_informer
-     .top_menu
-      img(src="assets/img/icons/hamburger.svg", alt="")
-     .top_social_contact
-      a(href="#")
-       img(src="assets/img/icons/vk.svg", alt="")
-      a(href="#")
-       img(src="assets/img/icons/github.svg", alt="")
-      a(href="#")
-       img(src="assets/img/icons/in.svg", alt="")
-    .name_page_bg.impression
-    .page_informer
-     .my_picture 
-       img(src="/assets/img/my_picture.jpg", alt="Моё фото")
-     .my_name_aw
-        h1 Николай Семенов
-        p Личный сайт веб разработчика
-    .header_pruning
-   .body_app.clearfix
-    section.about
+   header.header_blog.about_and_works
+     .top_informer
+      .top_menu
+       +icon('hamburger', '#')
+      +icon_set("top_social_contact",[{name:"vk", url:"https://vk.com/id40828570"}, {name:"github", url: "https://github.com/SemenovN"}, {name:"in", url:"https://www.linkedin.com/home?trk=nav_responsive_tab_home"}])
+     .name_page_bg.impression
+     .page_informer
+      .my_picture 
+        img(src="/assets/img/my_picture.jpg", alt="Моё фото")
+       .my_name_aw
+         h1 Nikolai Semenov
+         p Own site of webdeveloper 
+      .bottom_arrow
+        a(href="#").bottom_anchor
+         img(src="assets/img/icons/arrow_down.svg", alt="").arrow_down
+   section.about.clearfix
      .aboutme
+      .lefthalf_aboutme
+        .heading
+          .heading_bg.about_bg
+          .item_heading
+                h1 About me
+      .righthalf_aboutme
+        .aboutme_wrap
+         img(src="/assets/img/inwork.jpg", alt="", class="in_work")
+         .heading
+          .item_heading
+            h2 Who am I
+         .text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, natus fugit laboriosam provident vero, nihil doloremque sed, adipisci placeat, modi earum consequatur exercitationem aliquam quia dolorem consectetur amet beatae accusamus.
+         .text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, natus fugit laboriosam provident vero, nihil doloremque sed, adipisci placeat, modi earum consequatur exercitationem aliquam quia dolorem consectetur amet beatae accusamus.
      .myskils
-       h2.heading Чем я могу быть вам полезен sssssssssss
-    section.my_location
-   .emty
+      .heading
+        .item_heading
+            h2 How can I help you
+      .text Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+      .row_skils
+        .field_skils Frontend
+        .skils_panel
+          .skil_item 
+           .skil HTML  
+           svg.g-circles
+             circle(r="45" cx="55" cy="55" stroke="#ccc" fill="none")
+             circle(r="45" cx="55" cy="55" stroke="#10c1a8" transform="rotate(-90 55 55)" class="sector" stroke-dashoffset="20")
+         .skil_item 
+           .skil CSS3 
+         svg.g-circles
+          circle(r="45" cx="55" cy="55" stroke="#ccc" fill="none")
+          circle(r="45" cx="55" cy="55" stroke="#10c1a8" transform="rotate(-90 55 55)" class="sector" stroke-dashoffset="13")
+   section.my_location
+     #map
    include ../common/_footer

@@ -8,10 +8,11 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="/assets/css/foundation.css">
-    <link rel="stylesheet" href="/assets/css/app.css">
-    <script src="/assets/js/foundation.js" defer></script>
-    <script src="/assets/js/app.js" defer></script><!--[if lt IE 9]>
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="assets/js/foundation.js" defer></script>
+    <script src="assets/js/app.js" defer></script><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
@@ -21,34 +22,68 @@
   </body>
   <div class="page">
     <header class="header_blog">
-      <div class="top_informer">
-        <div class="top_menu"><img src="assets/img/icons/hamburger.svg" alt=""></div>
-        <div class="top_social_contact"><a href="#"><img src="assets/img/icons/vk.svg" alt=""></a><a href="#"><img src="assets/img/icons/github.svg" alt=""></a><a href="#"><img src="assets/img/icons/in.svg" alt=""></a></div>
+      <div class="top_informer clearfix">
+        <div class="top_menu"><a href="#" class="hamburger_link">
+              <svg class="icon icon-hamburger">
+                <use xlink:href="/assets/img/sprite.svg#hamburger"></use>
+              </svg></a>
+        </div>
+          <div class="top_social_contact"> 
+            <ul class="top_social_contact_list">
+              <li class="top_social_contact_list_item"><a href="https://vk.com/id40828570" class="top_social_contact_link">
+                  <svg class="icon-vk">
+                    <use xlink:href="/assets/img/sprite.svg#vk"></use>
+                  </svg></a></li>
+              <li class="top_social_contact_list_item"><a href="https://github.com/SemenovN" class="top_social_contact_link">
+                  <svg class="icon-github">
+                    <use xlink:href="/assets/img/sprite.svg#github"></use>
+                  </svg></a></li>
+              <li class="top_social_contact_list_item"><a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home" class="top_social_contact_link">
+                  <svg class="icon-in">
+                    <use xlink:href="/assets/img/sprite.svg#in"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
       </div>
-      <div class="page_informer">
-        <div class="name_page_bg"></div>
+      <div class="page_informer_blog">
         <div class="my_picture"> <img src="/assets/img/my_picture.jpg" alt="Моё фото"></div>
-        <div class="name_page">
-          <h1>Блог</h1>
-          <p>Статьи, которые я написал</p>
+        <div class="heading_bg blog_bg"></div>
+        <div class="heading">
+          <div class="item_heading">
+            <h1>Blog</h1>
+          </div>
         </div>
       </div>
     </header>
     <div class="body_app clearfix">
       <aside class="left_sidebar">
-        <div class="sidibar_menu">
-          <ul>
-            <li><a href="#">Самое свежее в SASS</a></li>
-            <li><a href="#">Приёмы в вёрстке, без которых не обходится ни один сайт</a></li>
-            <li><a href="#">Самый необходимый набор Gulp плагинов</a></li>
-            <li><a href="#">Почему я выбрал Jade</a></li>
+        <div class="sidebar_menu">
+          <ul class="sidebar_menu_list">
+            <li class="sidebar_menu_item"><a href="#" class="sidebar_menu_link">Самое свежее в SASS</a></li>
+            <li class="sidebar_menu_item"><a href="#" class="sidebar_menu_link">Приёмы в вёрстке, без которых не обходится ни один сайт</a></li>
+            <li class="sidebar_menu_item"><a href="#" class="sidebar_menu_link">Самый необходимый набор Gulp плагинов</a></li>
+            <li class="sidebar_menu_item"><a href="#" class="sidebar_menu_link">Почему я выбрал Jade</a></li>
           </ul>
         </div>
       </aside>
-      <section class="maincontent">
+      <section class="blog_content">
         <artical class="blog_artical">
-          <h1>Заголовок статьи</h1>
-          <p>Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия. Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</p>
+          <h1 class="heading_artical">Заголовок статьи</h1>
+          <div class="date_create_artical">27.06.2016</div>
+          <p class="content_artical">Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия. Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</p>
+        </artical>
+        <artical class="blog_artical">
+          <h1 class="heading_artical">Заголовок статьи</h1>
+          <div class="date_create_artical">27.06.2016</div>
+          <p class="content_artical">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime molestias nostrum, magni, quidem quia sit! Dolores obcaecati est, architecto voluptates ad ipsa vitae ut maxime debitis molestiae dicta amet! Numquam.</p>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eos non sunt magnam soluta eaque illo corporis libero doloremque neque repudiandae odit labore itaque minus, est cupiditate incidunt, aperiam in.</p>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum optio, saepe velit ipsa dolorem sint, repellat doloremque id est, libero, vel nulla asperiores reprehenderit adipisci! Pariatur laudantium saepe, non autem.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ab odit, officiis repellendus. Commodi numquam fugiat eius quae aperiam veniam! Doloremque a dolores laborum ratione autem, soluta voluptatibus voluptas consequatur!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus omnis obcaecati itaque expedita soluta, eos suscipit! Omnis minus voluptatibus facere, praesentium, qui accusamus placeat, at fugit, quisquam a architecto atque.</p>
+          <artical class="blog_artical"></artical>
+          <h1 class="heading_artical">Заголовок статьи</h1>
+          <div class="date_create_artical">27.06.2016</div>
+          <p class="content_artical">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime molestias nostrum, magni, quidem quia sit! Dolores obcaecati est, architecto voluptates ad ipsa vitae ut maxime debitis molestiae dicta amet! Numquam.</p>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eos non sunt magnam soluta eaque illo corporis libero doloremque neque repudiandae odit labore itaque minus, est cupiditate incidunt, aperiam in.</p>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum optio, saepe velit ipsa dolorem sint, repellat doloremque id est, libero, vel nulla asperiores reprehenderit adipisci! Pariatur laudantium saepe, non autem.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ab odit, officiis repellendus. Commodi numquam fugiat eius quae aperiam veniam! Doloremque a dolores laborum ratione autem, soluta voluptatibus voluptas consequatur!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus omnis obcaecati itaque expedita soluta, eos suscipit! Omnis minus voluptatibus facere, praesentium, qui accusamus placeat, at fugit, quisquam a architecto atque.</p>
         </artical>
       </section>
     </div>
@@ -63,13 +98,22 @@
             <li class="bottom_menu_list_item"><a href="index.html">Авторизоваться</a></li>
           </ul>
         </div>
-        <div class="bottom_social_contact">
-          <ul class="bottom_social_contact_list">
-            <li class="bottom_social_list_item"><a href="https://vk.com/id40828570">+icon('vk_round','red_mod')</a></li>
-            <li class="bottom_social_list_item"><a href="https://github.com/SemenovN">+icon('github_round','red_mod')</a></li>
-            <li class="bottom_social_list_item"><a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home">+icon('in_round','red_mod')</a></li>
-          </ul>
-        </div>
+            <div class="bottom_social_contact"> 
+              <ul class="bottom_social_contact_list">
+                <li class="bottom_social_contact_list_item"><a href="https://vk.com/id40828570" class="bottom_social_contact_link">
+                    <svg class="icon-vk_round">
+                      <use xlink:href="/assets/img/sprite.svg#vk_round"></use>
+                    </svg></a></li>
+                <li class="bottom_social_contact_list_item"><a href="https://github.com/SemenovN" class="bottom_social_contact_link">
+                    <svg class="icon-github_round">
+                      <use xlink:href="/assets/img/sprite.svg#github_round"></use>
+                    </svg></a></li>
+                <li class="bottom_social_contact_list_item"><a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home" class="bottom_social_contact_link">
+                    <svg class="icon-in_round">
+                      <use xlink:href="/assets/img/sprite.svg#in_round"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
       </div>
       <div class="bottomhalf_footer clearfix">
         <div class="aboutme">Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</div>

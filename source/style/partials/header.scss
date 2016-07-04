@@ -1,0 +1,253 @@
+.header_blog {
+	background-image: url(../img/bg-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 396px;
+  position: relative;
+  /*@include largscreen {
+  	background-position: center;
+  }*/
+}
+
+.header_blog:before {
+ content: '';
+ position: absolute;
+ width: 0;
+ height: 0;
+ left: 0;
+ bottom: 0;
+ border-bottom: 152px solid #FFF; 
+ border-right: 50vw solid transparent;
+ @include desktop {
+ 	 border-bottom: 102px solid #FFF; 
+   border-right: 50vw solid transparent;
+ } 
+ @include tablets {
+ 	 border-bottom: 66px solid #FFF; 
+   border-right: 50vw solid transparent;
+ } 
+ @include phones {
+ 	 border-bottom: 26px solid #FFF; 
+   border-right: 50vw solid transparent;
+ }
+}
+
+.header_blog:after {
+ content: '';
+ position: absolute;
+ width: 0;
+ height: 0;
+ right: 0;
+ bottom: 0;
+ border-bottom: 152px solid #FFF; 
+ border-left: 50vw solid transparent;
+ @include desktop {
+ 	 border-bottom: 102px solid #FFF; 
+   border-left: 50vw solid transparent;
+ }
+ @include tablets {
+ 	 border-bottom: 66px solid #FFF; 
+   border-left: 50vw solid transparent;
+ } 
+ @include phones {
+ 	 border-bottom: 26px solid #FFF; 
+   border-left: 50vw solid transparent;
+ } 
+}
+
+.page_informer_blog {
+  position: absolute;
+  left: 50%;
+  height: 60%;
+  width: 50%;
+  margin-left: -25%;
+}
+
+//Style topbar
+
+.top_informer {
+	height: auto;
+	padding: 28px 30px 18px;
+	max-width: 1800px;
+	margin: auto;
+}
+
+.top_social_contact_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top_social_contact_list_item {
+   display: inline-block;
+}
+
+.top_social_contact .icon-github, .top_social_contact .icon-vk, .top_social_contact .icon-in {
+ font-size: 6rem;
+ width:(50/50)*0.64em;
+ height: 2.5rem;
+ padding: 0 0.9rem;
+ fill: #c8d9d9;
+ color: #97a3a4;
+ stroke:  #c8d9d9;
+}
+
+.top_social_contact .icon-github:hover, 
+.top_social_contact .icon-vk:hover, 
+.top_social_contact .icon-in:hover {
+fill: #fff;
+stroke: #fff;
+}
+
+.icon-hamburger {
+ font-size: 6rem;
+ width:(50/50)*0.64em;
+ height: 2.2rem;
+ fill: #fff;
+ stroke:  #fff;
+}
+
+.hamburger_link {
+ border: none;
+}
+
+.top_menu {
+  float: right;
+}
+
+.top_social_contact {
+	float: left;
+}
+
+.page_informer {
+	position: absolute;
+  left: 50%;
+  height: 310px;
+  width: 386px;
+  margin: 90px -193px 0;
+}
+
+.page_informer .my_picture {
+  margin: 0 auto;
+}
+.name_page_bg {
+  //position: relative;
+	height: 332px;
+	width: 286px;
+	background-image: url(../img/icons/blog_header.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  opacity: 0.07;
+  margin: auto;
+}
+
+.name_page {
+	position: absolute;
+	text-align: center;
+	bottom: 24px;
+	left: 38px;
+}
+
+.name_page h1 {
+	margin: 0;
+	color: rgb(255, 255, 255);
+}
+
+.name_page h1 {
+	font-family: 'Bernier-Regular';
+	font-size: 63px;
+	line-height: 0.889;
+	letter-spacing: 2px;
+}
+.name_page h1:before {
+	position: absolute;
+	content: '\2014';
+	left: 2px;
+	color: rgba(255, 255, 255, .2);
+	font-size: 40px;
+	line-height: 55px;
+}
+
+.name_page h1:after {
+	position: absolute;
+	content: '\2014';
+	right: 6px;
+	color: rgba(255, 255, 255, .2);
+	font-size: 40px;
+	line-height: 55px;
+}
+
+.name_page p {
+	font-size: 16px;
+  font-family: 'Roboto-Regular';
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+
+.about_and_works {
+	background-image: url(../img/bg_onmain.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  //padding: 28px 30px;
+}
+
+
+.impression {
+	height: 30vh;
+	width: 80vw;
+	background-image: url(../img/icons/portfolio_header.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.07;
+  top: 136px;
+  position: absolute;
+  left: 50%;
+  margin-left: -38vw;
+}
+
+.my_name_aw {
+	text-align: center;
+  margin: 30px auto 0;
+}
+
+.my_name_aw h1 {
+	margin: 0;
+  font-size: 35px;
+  font-family: 'Roboto-Medium';
+  color: rgb(255, 255, 255);
+}
+
+.bottom_arrow {
+ width: 62px;
+ margin: 80px auto 0;
+}
+
+.arrow_down_link {
+	height: 15px;
+}
+
+.icon-arrow_down {
+ font-size: 6rem;
+ width:(50/50)*0.64em;
+ height: 2.5rem;
+ padding: 0 0.9rem;
+ fill: #bdcdd3;
+ stroke:  #bdcdd3;
+}
+
+.header_pruning {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/icons/bg.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
